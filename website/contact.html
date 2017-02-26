@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+ <link rel="stylesheet" type="text/css" href="web2.css" />
+ <script type="text/javascript" src="javascript/jquery-1.11.1.js"></script>
+ <script type="text/javascript" src="javascript/jquery.autosize.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+  $(".btn1").click(function(){
+    $("form").slideUp();
+  });
+  $(".btn2").click(function(){
+    $("form").slideDown();
+  });
+});
+</script>
+<script>
+	$(document).ready(function(){
+    $('textarea').autosize();   
+});
+</script>
+ <title>Contact</title>
+<meta charset="utf-8" />
+</head>
+
+<body>
+
+<div id="content">
+<div id="nav">
+<ul>
+	<li><a href="index.html">Home</a></li>
+	<li>
+	  <div><a href="create.html">HTML</a>
+	    <ul>	    
+	      <li><a href="tags.html">Tags and Attributes</a></li>
+	      <li><a href="multimedia.html">Multimedia, Images, Links</a></li>
+	      <li><a href="validation1.html">Validation</a></li>		
+	      </ul>
+	    </div>
+	</li>
+	<li><a href="css.html">CSS</a>
+	<ul>
+		<li><a href="boxmodel.html">Box Model</a></li>
+		<li><a href="positioning.html">Positioning</a></li>
+		<li><a href="validation2.html">Validation</a></li>	
+	</ul>
+	</li> 
+	<li><a href="javascript.html">Javascript</a>
+	<ul>
+		<li><a href="regularexp.html">Regular Expressions</a></li>
+	</ul></li>
+	<li><a href="contact.html">Contact</a></li>
+</ul>
+</div>
+
+<!-- <form method="get" action="http://a.server.com/script">
+ -->
+ <h1>Contact Us</h1>
+ <hr />
+ <br />
+
+ <form class="contact_form" action="" method="post" name="contact_form" >
+ <p>Enter your name: <br /><input type="text" name="name" placeholder="Jared"  required /></p>
+<p>Enter your surname: <br /><input type="text" name="surname" placeholder="Leto" required /></p>
+<p>Enter your email: <br/><input type="email" name="email" placeholder="jared.leto@example.com" required  pattern= "^([0-9a-zA-Z]+([_.-]?[0-9a-zA-Z]+)*@[0-9a-zA-Z]+[0-9,a-z,A-Z,.,-]*(.){1}[a-zA-Z]{2,4})+$" id="email" /></p>
+<p>Add your comments or questions <br />
+<textarea name="comments" rows="7" cols="35" required></textarea>
+</p>
+<!-- //<div class="formbut"> -->
+<input type="submit" value="Submit" id="submit"/>
+<input type="reset" value="Reset"  id="reset"/>	
+<!-- </div> -->
+</form>
+<button class="btn1">Hide Form</button>
+<button class="btn2">Show Form</button>
+<br />
+<hr />
+
+<br />
+</div>
+
+</body>
+</html>

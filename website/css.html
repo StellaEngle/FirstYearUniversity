@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+ <link rel="stylesheet" type="text/css" href="web2.css" />
+ <title>CSS</title>
+<meta charset="utf-8" />
+</head>
+
+<body>
+<div id="content">
+<div id="nav">
+<ul>
+  <li><a href="index.html">Home</a></li>
+  <li>
+    <div><a href="create.html">HTML</a>
+      <ul>      
+        <li><a href="tags.html">Tags and Attributes</a></li>
+        <li><a href="multimedia.html">Multimedia, Images, Links</a></li>
+        <li><a href="validation1.html">Validation</a></li>    
+        </ul>
+      </div>
+  </li>
+  <li><a href="css.html">CSS</a>
+  <ul>
+    <li><a href="boxmodel.html">Box Model</a></li>
+    <li><a href="positioning.html">Positioning</a></li>
+    <li><a href="validation2.html">Validation</a></li>  
+  </ul>
+  </li> 
+  <li><a href="javascript.html">Javascript</a>
+  <ul>
+    <li><a href="regularexp.html">Regular Expressions</a></li>
+  </ul></li>
+ <li><a href="contact.html">Contact</a></li>
+</ul>
+</div>
+<h1>CSS</h1>
+<p>There are two different kinds of style sheets, the internal style sheets and the external style sheets. To use an internal style sheet you need to use the &lt;style&gt; tags inside the &lt;head&gt; section of an HTML document. To use an external style sheet, you have to link it to an HTML document. You can also have multiple external style sheets linked to one document. </p>
+<p><strong>Internal Style Sheet</strong></p>
+<pre>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;title&gt; A Simple (HTML 5) Document &lt;/title&gt;
+&lt;style type="text/css"&gt;
+body{
+	background-color: grey;
+	}
+&lt;/style&gt;
+&lt;meta charset=”utf-8”/&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;h1&gt; A Simple document&lt;/h1&gt;
+&lt;p&gt; A paragraph.&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</pre>
+<p><strong>External Style Sheet</strong></p>
+<pre>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;title&gt; A Simple (HTML 5) Document &lt;/title&gt;
+&lt;link rel="stylesheet" type="text/css" href="mydesign.css" /&gt;
+&lt;meta charset="utf-8"/&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;h1&gt; A Simple document&lt;/h1&gt;
+&lt;p&gt; A paragraph.&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</pre>
+<p>Click the button below to see the above examples.</p>
+<div class="but1">
+<input type="button" value="Click Me" onClick="parent.location='internalsample.html'" />
+</div>
+<br />
+<hr />
+<h2>CSS Selectors</h2>
+<p>Selectors are used to find a particular element in a HTML document and then format it using the CSS file. They can be combined together to give more control over the elements of the document, that you wish to format.</p>
+<p>There are three selector types. The tag selector which matches all instances of a tag, e.g. &lt;/p&gt;, &lt;h1&gt;. The class selector which matches all the tags which contain the particular class attribute. Last but not least, is the ID selector, which matches the unique tag which contains the particular ID attribute.</p>
+<p>The table below shows some of the Selector Syntax you can have.</p>
+<table >
+  <tr>
+    <th >Selector</th>
+    <th >Pattern matched</th>
+  </tr>
+  <tr>
+    <td>p</td>
+    <td>All &lt;p&gt;</td>
+  </tr>
+  <tr>
+    <td>.items</td>
+    <td>&lt;anytag class=&quot;items&quot;&gt;</td>
+  </tr>
+  <tr>
+    <td>p.items</td>
+    <td>All &lt;p class=&quot;items&quot;&gt;</td>
+  </tr>
+  <tr>
+    <td>#part1</td>
+    <td>The only &lt;anytag id=&quot;part1&quot;&gt;</td>
+  </tr>
+  <tr>
+    <td>#part1 p</td>
+    <td>All &lt;p&gt; nested anywhere inside the only &lt;anytag id=&quot;part1&quot;&gt;</td>
+  </tr>
+  <tr>
+    <td>#part1 &gt; p</td>
+    <td>All &lt;p&gt; that are direct children of  &lt;anytag id=&quot;part1&quot;&gt;</td>
+  </tr>
+  <tr>
+    <td>#part1 p.items</td>
+    <td>All &lt;p class=&quot;items&gt; nested anywhere inside the only tag with the id of part1</td>
+  </tr>
+  <tr>
+    <td>div#part1 p</td>
+    <td>All &lt;p&gt; nested anywhere inside the only &lt;div id=&quot;part1&quot;&gt;</td>
+  </tr>
+</table>
+<br />
+<p>More about CSS selectors can be found <a href="http://www.w3schools.com/cssref/css_selectors.asp">here.</a></p>
+<hr />
+<h2>CSS Units</h2>
+<p>CSS supports many types of measurement unit. Absolute units are calculated independently of the other content of a web page and browser defaults. Absolute units include pixels (px), points (pt), and millimetres (mm). Relative units are calculated proportionally against other content of a web page. Relative units include percentages (%), eme (em), exes (ex) and special relative units for text such as small, large etc.</p>
+
+
+</div>
+</body>

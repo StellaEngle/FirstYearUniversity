@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'> 
+  <link rel="stylesheet" type="text/css" href="web2.css" />
+   <link rel="stylesheet" href="javascript/magnific-popup.css" /> 
+ <script type="text/javascript" src="javascript/jquery-1.11.1.js"></script>
+ <script src="javascript/jquery.magnific-popup.min.js"></script> 
+<script type="text/javascript">
+$(document).ready(function() {
+
+	$('.image-popup-vertical-fit').magnificPopup({
+		type: 'image',
+		closeOnContentClick: true,
+		mainClass: 'mfp-img-mobile',
+		image: {
+			verticalFit: true
+		}
+		
+	});
+
+	$('.image-popup-fit-width').magnificPopup({
+		type: 'image',
+		closeOnContentClick: true,
+		image: {
+			verticalFit: false
+		}
+	});
+
+	$('.image-popup-no-margins').magnificPopup({
+		type: 'image',
+		closeOnContentClick: true,
+		closeBtnInside: false,
+		fixedContentPos: true,
+		mainClass: 'mfp-no-margins mfp-with-zoom', // class to remove default margin from left and right side
+		image: {
+			verticalFit: true
+		},
+		zoom: {
+			enabled: true,
+			duration: 300 // don't foget to change the duration also in CSS
+		}
+	});
+
+});
+
+</script>
+ <title>JavaScript</title>
+<meta charset="utf-8" />
+</head>
+
+<body>
+<div id="content">
+<div id="nav">
+<ul>
+	<li><a href="index.html">Home</a></li>
+	<li>
+	  <div><a href="create.html">HTML</a>
+	    <ul>	    
+	      <li><a href="tags.html">Tags and Attributes</a></li>
+	      <li><a href="multimedia.html">Multimedia, Images, Links</a></li>
+	      <li><a href="validation1.html">Validation</a></li>		
+	      </ul>
+	    </div>
+	</li>
+	<li><a href="css.html">CSS</a>
+	<ul>
+		<li><a href="boxmodel.html">Box Model</a></li>
+		<li><a href="positioning.html">Positioning</a></li>
+		<li><a href="validation2.html">Validation</a></li>	
+	</ul>
+	</li> 
+	<li><a href="javascript.html">Javascript</a>
+	<ul>
+		<li><a href="regularexp.html">Regular Expressions</a></li>
+	</ul></li>
+	<li><a href="contact.html">Contact</a></li>
+</ul>
+</div>
+<h1>JavaScript</h1>
+<p>JavaScript is a scripting language that executes in the web browser on the client machine. It is an imperative language with C-style syntax.</p>
+<p>There are two ways to add JavaScript to a web page. Firstly is inline using the &lt;script&gt; tag. The content of a script element is executed by the browser’s JavaScript interpreter. You can add the script anywhere you would like in your HTML document</p>
+<div class="scripts">
+<a class="image-popup-vertical-fit" href="images/script1.jpg">
+	<img src="images/script1.jpg" alt="scriptimage" /></a>
+</div>
+<p>Secondly, is using external scripts and the src attribute.</p>
+<div class="scripts">
+<a class="image-popup-vertical-fit" href="images/script2.jpg">
+	<img class="lazy" src="images/script2.jpg" alt="scriptimage" /></a>
+</div>
+<hr />
+<h2>Data Types and Operators</h2>
+<p>You should initialise variable first with the key word <strong>var</strong> and then set their values.</p>
+<div class="scripts">
+<a class="image-popup-vertical-fit" href="images/script3.jpg">
+	<img src="images/script3.jpg" alt="" /></a>
+</div>
+<p>JavaScript also supports a various range of operators such as:</p>
+<div class="list">
+<ul>
+<li>Data Operators ( +, -, *, /, ++ )</li>
+<li>Logical Operators ( &amp;&amp;, ||, ! )</li>
+<li>Comparison Operators ( &gt;, &lt;, &lt;=,&gt;=, ==, != )</li>	
+</ul>
+</div>
+<hr />
+<h2>Arrays</h2>
+<p>Arrays are used to store data. In JavaScript they are zero-based index.</p>
+<p>To create and populate an array:</p>
+<div class="scripts">
+<a class="image-popup-vertical-fit" href="images/script4.jpg">
+	<img src="images/script4.jpg" alt="" /></a>
+</div>
+<p>To manipulate and access an array:</p>
+<div class="scripts">
+<a class="image-popup-vertical-fit" href="images/script5.jpg">
+	<img src="images/script5.jpg" alt="" /></a>
+</div>
+<hr />
+<h2>Loops</h2>
+<p>Loops are used to repeat a block of code. Some examples:</p>
+<p>Fixed Number of repetitions.</p>
+<div class="scripts">
+<a class="image-popup-vertical-fit" href="images/script6.jpg">
+	<img src="images/script6.jpg" alt="" /></a>
+</div>
+<p>While a condition exists.</p>
+<div class="scripts">
+<a class="image-popup-vertical-fit" href="images/script7.jpg">
+	<img src="images/script7.jpg" alt="" /></a>
+</div>
+<hr />
+<h2>Conditional Statements</h2>
+<p>If..Else Statement:</p>
+<div class="scripts">
+<a class="image-popup-vertical-fit" href="images/script8.jpg">
+	<img src="images/script8.jpg" alt="" /></a>
+</div>
+<p>Switch..Case Statement:</p>
+<div class="scripts">
+<a class="image-popup-vertical-fit" href="images/script9.jpg">
+	<img class="lazy" src="images/script9.jpg" alt="" /></a>
+</div>
+<br />
+</div>
+
+
+</body>
+</html>

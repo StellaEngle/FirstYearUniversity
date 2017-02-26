@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+ <link rel="stylesheet" type="text/css" href="web2.css" />
+ <link rel="stylesheet" href="javascript/magnific-popup.css" /> 
+ <script type="text/javascript" src="javascript/jquery-1.11.1.js"></script>
+ <script src="javascript/jquery.magnific-popup.min.js"></script> 
+<script type="text/javascript">
+$(document).ready(function() {
+
+	$('.image-popup-vertical-fit').magnificPopup({
+		type: 'image',
+		closeOnContentClick: true,
+		mainClass: 'mfp-img-mobile',
+		image: {
+			verticalFit: true
+		}
+		
+	});
+
+	$('.image-popup-fit-width').magnificPopup({
+		type: 'image',
+		closeOnContentClick: true,
+		image: {
+			verticalFit: false
+		}
+	});
+
+	$('.image-popup-no-margins').magnificPopup({
+		type: 'image',
+		closeOnContentClick: true,
+		closeBtnInside: false,
+		fixedContentPos: true,
+		mainClass: 'mfp-no-margins mfp-with-zoom', // class to remove default margin from left and right side
+		image: {
+			verticalFit: true
+		},
+		zoom: {
+			enabled: true,
+			duration: 300 // don't foget to change the duration also in CSS
+		}
+	});
+
+});
+
+</script>
+ <title>Create</title>
+<meta charset="utf-8" />
+</head>
+
+<body>
+<div id="content">
+<div id="nav">
+<ul>
+	<li><a href="index.html">Home</a></li>
+	<li>
+	  <div><a href="create.html">HTML</a>
+	    <ul>	    
+	      <li><a href="tags.html">Tags and Attributes</a></li>
+	      <li><a href="multimedia.html">Multimedia, Images, Links</a></li>
+	      <li><a href="validation1.html">Validation</a></li>		
+	      </ul>
+	    </div>
+	</li>
+	<li><a href="css.html">CSS</a>
+	<ul>
+		<li><a href="boxmodel.html">Box Model</a></li>
+		<li><a href="positioning.html">Positioning</a></li>
+		<li><a href="validation2.html">Validation</a></li>	
+	</ul>
+	</li> 
+	<li><a href="javascript.html">Javascript</a>
+	<ul>
+		<li><a href="regularexp.html">Regular Expressions</a></li>
+	</ul></li>
+	<li><a href="contact.html">Contact</a></li>
+</ul>
+</div>
+
+<h1>Create a Simple Web Page</h1>
+<p>To create a simple document in HTML 5 you have to include:</p>
+<div class="ordlist">
+<ol>
+<li>A line containing HTML version information</li>
+<li>A declarative header section (delimited by the &lt;head&gt; element)</li>
+<li>A body which contains the document’s actual content. The body must be implanted by the &lt;body&gt; element</li>
+</ol>
+<p>Sections 2 and 3 should be delimited by the &lt;html&gt; element.</p>
+</div>
+<br/>
+<p>Copy and paste the text below in a text editor and save it as html document (.html) and then open in a browser.</p>
+<pre>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;title> A Simple (HTML 5) Document &lt;/title&gt;
+&lt;meta charset=”utf-8”/&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;h1&gt; A Simple document&lt;/h1&gt;
+&lt;p&gt; A paragraph.&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</pre>
+<p>You will get a web page looking like this: </p>
+<br />
+
+<div class="img2">
+
+<a class="image-popup-vertical-fit" href="images/img2.jpg">
+	<img src="images/img2.jpg"  alt="" /></a>	
+	</div>
+<br/>
+<p>A tutorial video on how to create a simple web page using HTML 5.</p>
+<div class="youvideo">
+<iframe class="youtube-player"  width = "440" height="285"
+src="http://www.youtube.com/embed/9gTw2EDkaDQ?rel=0" allowfullscreen>
+</iframe>
+</div>
+<br />
+</div>
+</body>
+</html>

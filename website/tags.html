@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+ <link rel="stylesheet" type="text/css" href="web2.css" />
+ <title>HTML Document</title>
+<meta charset="utf-8" />
+</head>
+
+<body>
+<div id="content">
+<div id="nav">
+<ul>
+  <li><a href="index.html">Home</a></li>
+  <li>
+    <div><a href="create.html">HTML</a>
+      <ul>      
+        <li><a href="tags.html">Tags and Attributes</a></li>
+        <li><a href="multimedia.html">Multimedia, Images, Links</a></li>
+        <li><a href="validation1.html">Validation</a></li>    
+        </ul>
+      </div>
+  </li>
+  <li><a href="css.html">CSS</a>
+  <ul>
+    <li><a href="boxmodel.html">Box Model</a></li>
+    <li><a href="positioning.html">Positioning</a></li>
+    <li><a href="validation2.html">Validation</a></li>  
+  </ul>
+  </li> 
+  <li><a href="javascript.html">Javascript</a>
+  <ul>
+    <li><a href="regularexp.html">Regular Expressions</a></li>
+  </ul></li>
+  <li><a href="contact.hmtl">Contact</a></li>
+</ul>
+</div>
+<h1>Tags and Attributes</h1>
+
+<h2>Tags</h2>
+<p>Tags surround the content of your document and give meaning to it, there are different type of tags like Block-level tags and Inline tags which can be nested inside block level tags. They usually come in pairs with begin and end tag for example &lt;h1&gt; ... &lt;/h1&gt;, other tags are self-closing tags like &lt;br /&gt; and &lt;hr /&gt; tags</p>
+<hr/>
+<h3>Block-level tags</h3>
+<p>Block-level tags provide a basic content structure for a web page. When block-level elements are displayed in a browser usually they start and end with a new line. Block-level tags we are going to cover are:</p>
+<div class="list">
+<ul>
+	<li><a href="tags.html#headings">Headings</a></li>
+	<li><a href="tags.html#paragraph">Paragraphs</a></li>
+	<li><a href="tags.html#listpart">Lists</a></li>
+</ul>
+</div>
+<hr />
+<div id="headings">
+<p><strong>Headings</strong> are one of the most important structure components in an HTML document. It allows the content of a web page to be divided in different sections, therefore the reader of a web page does not need to read all the content of a page to find what he is looking for, but only the relative section. There are six levels of headings &lt;h1&gt; (which is the most important) to &lt;h6&gt; (which is the least important). There must: </p>
+</div>
+<div class="list">
+<ul>
+	<li>Be only one &lt;h1&gt; per page</li>
+	<li>They cannot be nested together </li>
+	</ul>
+	<img class="imgne" src="images/nested.jpg" alt="Nested headings"/>
+<ul>
+	<li>Levels should not be skipped.</li>
+</ul>
+<img class="imghe" src="images/headings.jpg" alt="Headings">
+</div>
+<p>More information about headings can be found<a class="links" href="http://www.w3schools.com/tags/tag_hn.asp">here.</a></p>
+<hr/>
+
+<div id="paragraph">
+<p><strong>Paragraphs</strong> of an HTML document have the same use as the paragraphs of a text document. However, in an HTML document, paragraphs must be define with &lt;p&gt; and &lt;/p&gt; tags. </p>
+<p>Web browsers will automatically add a new line before and after a paragraph. However, if you want to insert a new line without starting a new paragraph, you can use the &lt;br /&gt; tag, you can also insert a new line inside the &lt;p&gt; tags but you should avoid doing it. Additionally you can divide the HTML document in different sections using the &lt;hr /&gt; to insert a new horizontal line. </p> </div>
+<pre>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;title&gt; A Simple (HTML 5) Document &lt;/title&gt;
+&lt;meta charset="utf-8"/&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;h1&gt; A Simple document&lt;/h1&gt;
+&lt;p&gt; A paragraph.&lt;/p&gt;
+&lt;hr/&gt;
+&lt;p&gt; A second &lt;br/&gt;paragraph.&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</pre>
+<p>Click the button to see the above HTML document in a web browser</p>
+<div class="but1">
+<input type="button" value="Click Me" onClick="parent.location='sample2.html'">
+</div>
+<hr/>
+<div id="listpart">
+<p>There are three types of lists to use in an HTML document. The ordered list, the unordered list and the description list which is used when describing a term or a name.</p>
+<p><strong>Unordered List</strong></p>
+<pre>
+&lt;ul&gt;
+&lt;li&gt;Item 1&lt;/li&gt;
+&lt;li&gt;Item 2&lt;/li&gt;
+&lt;li&gt;Item 3&lt;/li&gt;
+&lt;/ul&gt;
+</pre>
+
+<p><strong>Ordered List</strong></p>
+<pre>
+&lt;ol&gt;
+&lt;li&gt;First item&lt;/li&gt;
+&lt;li&gt;Second item&lt;/li&gt;
+&lt;/ol&gt;
+</pre>
+<p><strong>Description List</strong></p>
+<pre>
+&lt;dl&gt;
+&lt;dt&gt;Item&lt;/dt&gt;
+&lt;dd&gt;Something you can use&lt;/dd&gt;
+&lt;/dl&gt;
+</pre>
+
+<p>Click the button to see the lists in a web page</p>
+<div class="but1">
+<input type="button" value="Click Me" onClick="parent.location='sample3.html'">
+</div>
+<p>For more information about lists click <a href="http://www.w3schools.com/html/html_lists.asp" >here</a></p></div>
+<hr/>
+<h3>Inline Tags</h3>
+<p>Inline tags must be nested inside block-level tags. There are two types of inline tags, the logical inline tags which provide additional semantic meaning to the content of an HTML document, and the physical inline tags which are mainly used to produce a visual effect on an HTML document. </p>
+
+<table ><!-- width="600" height="236" border="1"> -->
+ 
+  <tr>
+    <td><strong>Tag</strong></td>
+    <td><strong>Enclosed content is:</strong></td>
+    <td><strong>Visual feedback</strong></td>
+  </tr>
+  <tr>
+    <td>&lt;em&gt;</td>
+    <td>given extra emphasis</td>
+    <td>Text in italics</td>
+  </tr>
+  <tr>
+    <td>&lt;strong&gt;</td>
+    <td>given strong emphasis</td>
+    <td>Text in bold</td>
+  </tr>
+  <tr>
+    <td>&lt;cite&gt;</td>
+    <td>a citation or reference</td>
+    <td>Usually italicised</td>
+  </tr>
+  <tr>
+    <td>&lt;code&gt;</td>
+    <td>is program code</td>
+    <td>Text in monospace font</td>
+  </tr>
+  <tr>
+    <td>&lt;abbr&gt; and &lt;acronym&gt;</td>
+    <td>is a shortened form</td>
+    <td>None - requires a title attribute</td>
+  </tr>
+</table>
+<br/>
+<hr/>
+<h2>Attributes</h2>
+<p>Attributes provide additional information about the elements of an HTML document. They always come in name/value pairs (name=”value”). Attributes are declared in the opening tag, self-closing tags can contain attributes as well. The attributes below can be applied to any &lt;body&gt; tag.</p>
+<table> <!-- width="453" height="145" border="1" -->
+  <tr>
+    <th> <!-- width="139" scope="col"> -->Attribute</th>
+    <th><!-- width="298" scope="col"> -->Purpose</th>
+  </tr>
+  <tr>
+    <td>class</td>
+    <td>Associates an element with a CSS class</td>
+  </tr>
+  <tr>
+    <td>id</td>
+    <td>Uniquely identifies element for CSS/Scripting</td>
+  </tr>
+  <tr>
+    <td>style</td>
+    <td>Provides inline CSS style rules for an element</td>
+  </tr>
+  <tr>
+    <td>title</td>
+    <td>Describes an element and its content. Creates tool-tips in browsers and used by screen readers.</td>
+  </tr>
+</table>
+<br/>
+<hr/>
+<p>More information about <a href="http://www.w3schools.com/tags/default.asp">tags</a> and <a href="http://www.w3schools.com/tags/ref_standardattributes.asp">attributes</a></p>
+</div>
+</body>
+</html>

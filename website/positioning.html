@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+ <link rel="stylesheet" type="text/css" href="web2.css" />
+ <link rel="stylesheet" href="javascript/magnific-popup.css" /> 
+ <script type="text/javascript" src="javascript/jquery-1.11.1.js"></script>
+ <script src="javascript/jquery.magnific-popup.min.js"></script> 
+<script type="text/javascript">
+$(document).ready(function() {
+
+	$('.image-popup-vertical-fit').magnificPopup({
+		type: 'image',
+		closeOnContentClick: true,
+		mainClass: 'mfp-img-mobile',
+		image: {
+			verticalFit: true
+		}
+		
+	});
+
+	$('.image-popup-fit-width').magnificPopup({
+		type: 'image',
+		closeOnContentClick: true,
+		image: {
+			verticalFit: false
+		}
+	});
+
+	$('.image-popup-no-margins').magnificPopup({
+		type: 'image',
+		closeOnContentClick: true,
+		closeBtnInside: false,
+		fixedContentPos: true,
+		mainClass: 'mfp-no-margins mfp-with-zoom', // class to remove default margin from left and right side
+		image: {
+			verticalFit: true
+		},
+		zoom: {
+			enabled: true,
+			duration: 300 // don't foget to change the duration also in CSS
+		}
+	});
+
+});
+
+</script>
+ <title>Positioning</title>
+<meta charset="utf-8" />
+</head>
+
+<body>
+<div id="content">
+<div id="nav">
+<ul>
+	<li><a href="index.html">Home</a></li>
+	<li>
+	  <div><a href="create.html">HTML</a>
+	    <ul>	    
+	      <li><a href="tags.html">Tags and Attributes</a></li>
+	      <li><a href="multimedia.html">Multimedia, Images, Links</a></li>
+	      <li><a href="validation1.html">Validation</a></li>		
+	      </ul>
+	    </div>
+	</li>
+	<li><a href="css.html">CSS</a>
+	<ul>
+		<li><a href="boxmodel.html">Box Model</a></li>
+		<li><a href="positioning.html">Positioning</a></li>
+		<li><a href="validation2.html">Validation</a></li>	
+	</ul>
+	</li> 
+	<li><a href="javascript.html">Javascript</a>
+	<ul>
+		<li><a href="regularexp.html">Regular Expressions</a></li>
+	</ul></li>
+	<li><a href="contact.html">Contact</a></li>
+</ul>
+</div>
+<h1>CSS Positioning</h1>
+<p>CSS Positioning and layout is moving, placing or rearranging the elements or boxes of a web page. A web browser firstly reads the HTML document and CSS styles which apply to each box, and then displays the page.</p>
+<p>Float is an easy way to position the elements of a web page. The elements of a web page can be only be floated right or left. When an element is floated, it will be moved as far right or left as possible. However the rest elements after the floated element will not change their shape but instead their content will be wrap around the floated element.</p>
+<a class="image-popup-vertical-fit" href="images/floats1.jpg">
+<img class="float" src="images/floats1.jpg" alt="float1"></a>
+<p>To overcome this problem you should use the CSS clear property. The values left, right or both of the CSS clear property determinates which side of the non-floated elements should be cleared of the floated element.</p>
+<a class="image-popup-vertical-fit" href="images/floats2.jpg">
+<img class="float" src="images/floats2.jpg" alt="float2"></a>
+<p>To turn a non-floated element into a column you can use the margin and padding properties. </p>
+<p>There are four values to re-position elements in CSS. The static value, it is not normally set unless to override other position. The relative value, leaves elements in the page flow but allows them to be displayed in other offset position. The absolute value, removes the elements from the page flow and allows them to be positioned anywhere in the page. Lastly, the fixed value, removes the elements from the page flow, fixes them to the browser view port and the rest of the  page can scroll behind them.</p>
+</div>
+</body>
+</html>

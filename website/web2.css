@@ -1,0 +1,242 @@
+html{background-color:#cad7de; } /*Changes the background colour of the website*/
+
+#content{/* Sets the width and the background colour of the content of the website */
+	text-align: justify;			
+	position:relative;	
+	max-width:960px;
+	min-width:740px;
+	margin-left:auto;
+	margin-right:auto;
+	border-bottom-style:solid;	
+	background-color: #f6f6f6;
+	
+	}
+
+p{ /*Sets the font, the size of the font and the margin and padding of all paragraphs*/
+	font-family: 'Roboto', 'sans-serif';
+	padding: 5px;
+	margin: 5px;
+	font-size: 13pt;
+ }
+
+ h1 { 	/*Sets the font, the position, and the colour of the font of heading 1*/	
+ 	color:#939b9f;  
+ 	font-family: 'Roboto', 'sans-serif';
+	position:relative;
+	padding:20px;
+	left: 275px;
+	top: 30px;
+	font-size: 22pt;
+	}
+
+h2{ /*Sets the font, and the colour of the font of heading 2*/
+	color:#939b9f;
+ 	font-family: 'Roboto', 'sans-serif';
+	padding-left: 10px;
+}	
+h3{/*Sets the font, and the colour of the font of heading 3*/
+	color:#939b9f;
+ 	font-family: 'Roboto', 'sans-serif';
+	padding-left: 10px;
+}
+
+hr{ /*Sets the height and the colour of the horizontal lines*/
+	height: 5px;
+	background-color:#939b9f;
+	border-color:#cad7de; 
+}
+#nav{	/*Creates the navigation bar at the top of the website*/
+	background-color: #37465d;
+	position: absolute;
+	top: 0px;
+	left: 0px;	
+	width: 959px;
+	width:100%;
+	min-width: 740px;
+	z-index: 1;
+	
+ }
+
+ #nav ul{ 	/*Controls the unordered list */
+	list-style:none;
+	margin:5px;	
+	font-family: 'Roboto', 'sans-serif';
+	padding:0px;
+	margin-bottom: 0px;
+	overflow:hidden;
+	float:left;
+	}
+	
+	#nav li{ /*Sets the margins and paddings of the list*/
+	margin-left: 0px;
+	margin-right: 30px;
+	padding-right: 35px;
+	overflow: hidden;
+	float: left;
+	font-family: 'Roboto', 'sans-serif';
+	}
+
+#nav a{	/* Controls the link references in the navigation bar*/
+	background-color: #37465d;
+	color: #c6dbdc;
+	display: block;
+	font-size: 13pt;		
+	text-decoration: none;
+	font-family: 'Roboto', 'sans-serif';
+}
+
+
+#nav li ul { /*Positions and sets the width the elements of the navigation bar*/
+	position:absolute;
+ 	width:12em;	
+ 	left: -999em; 	
+	margin-right:0px;
+	
+	}
+
+	#nav li:hover ul, #nav li.sfhover ul {	
+	margin-bottom:0px;
+	margin-top:0px;	
+	padding-top:0px;
+	left: auto;	
+	margin-left: 0px;
+	padding-right: 20px;
+	}	
+	
+
+	#nav li ul a { /*Sets the width, paddings and margins of the drop down menu*/
+	display:block;
+	float: right;
+	min-width:14em;
+	padding-left: 5px;
+	z-index: 0;
+	} 
+
+	#nav li ul a:hover { /*Sets the font colour and the background colour of the drop down menu when you hoven on them*/
+	background-color:  #e6e8ea;
+	color: black;
+	}
+
+.img1{/*Sets the left padding of the image in the index document*/
+
+	padding-left: 275px;
+}
+.img2{/*Sets the left padding of the image in the create document*/
+	padding-left: 10px;
+}
+.ordlist{ /*Sets the font and the size of the font of all the lists with the class .ordlist*/
+	font-family: 'Roboto', 'sans-serif';
+	font-size: 12pt;
+}
+.list ul li{ /*Sets the font, the style and the size of the font of all the lists with the class .list*/
+	font-family: 'Roboto', 'sans-serif';
+	font-size: 12pt;
+	list-style: square;
+}
+pre{ /*Sets the background and the left padding of all preformatted text*/
+	background-color: #e6e8ea;
+	padding-left: 10px;
+}
+.imgne{ /*Sets the position and border of the image in the tag document*/
+	border-style: solid;
+	border-width: 2px;
+	position: relative;
+	left: 35px;
+}
+.imghe{ /*Sets the position and border of the image in the tag document*/
+	border-style: solid;
+	border-width: 2px;
+	position: relative;
+	left: 35px;
+}
+
+.links{ /*Sets the font, the size of the font and the left padding of all the elements with the class links*/
+	font-family: 'Roboto', 'sans-serif';
+	font-size: 12pt;
+	padding-left: 10px
+}
+.but1{ /*Sets the position of the buttons in the tag document*/
+	position: relative;
+	left: 20px;	
+}
+table{	/*Set the size, position and the border-collapse of the table*/	
+	border-collapse: collapse;
+	position: relative;
+	left: 40px;
+	width: 600px;
+}
+th, td{
+	border: 1px solid black
+}
+.smallheading{ /*Sets the colour, the font, and the position of the heading 1 with the class smallheading in the multimedia document*/
+	color:#939b9f;
+ 	font-family: 'Roboto', 'sans-serif';
+	position: relative;
+	left: -10px;
+	font-size: 24px;
+}
+
+.lin1{/*Sets the position and the border of the images with the class lin1 in the multimedia document*/
+	position: relative;
+	left: 5px;
+	border-style: solid;	
+}
+.valid1{ /*Sets the position of the image in the validation1 and validation2 documents*/
+	position: relative;
+	left: 300px;
+	top: 10px;
+
+}
+.float{ /*Sets the border and  the position of the images in the positioning document*/
+	border-style: solid;
+	border-radius: 10px;
+	border-color: gray;
+	position: relative;
+	left: 80px;
+}
+.browserimg{ /*Sets the position of the image in the boxmodel document*/
+	position: relative;
+	left: 150px;
+}
+.scripts{ /*Sets the position of the images with the class scripts in the javascript document*/
+	position: relative;
+	left: 45px;
+}
+
+.regular{/*Sets the position of the images with the class regular in the regexp document*/
+
+	position: relative;
+	left: 30px;
+}	
+
+.contact_form input { /*Set the padding of the form*/
+   position: relative;
+  padding-right: 20px;
+   padding-left: 5px;
+   padding-bottom: 5px;
+}
+.contact_form input:focus, .contact_form textarea:focus { /*Sets the background colours and border of the input and textare when they are in focus*/
+   background-color:#cedce7;
+   border-style: solid;
+   border:1px;
+   
+}
+#submit{ /*Sets the position and the left and right padding of the submit button*/
+	position: relative;
+	left: 250px;	
+	padding-left: 10px;
+	padding-right: 10px;
+}
+#reset{ /*Sets the position and the left and right padding of the reset button*/
+	padding-left: 10px;
+	padding-right: 10px;
+	position: relative;
+	left: 250px;
+}
+
+.youvideo{ /*Sets the position of the videos from youtube */
+	position: relative;
+	left: 40px;
+}
+
+
